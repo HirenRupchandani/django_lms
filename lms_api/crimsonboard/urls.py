@@ -46,6 +46,8 @@ urlpatterns = [
     # Assignments
     path('assignment/', views.AssignmentList.as_view()),
     path('assignment/<int:pk>', views.AssignmentDetail.as_view()),
+    path('testjson/', views.testjson),
+    path('', views.homeview, name='React'),
     
     # path('student-course-assignment/<int:course_id>', views.view_instructor_course_assignments),
     path('view-course-assignment/<int:instructor_id>/<int:course_id>', views.view_instructor_course_assignments),

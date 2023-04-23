@@ -222,3 +222,12 @@ def view_instructor_course_assignments(request, instructor_id, course_id):
     
     return JsonResponse({'response': response}) 
 
+def testjson(self):
+    print("In here")
+
+    msg = "Hi Hello Team, welcome to the JsonAPI"
+    return JsonResponse({'Status':'Success', 'msg' : msg})
+
+def homeview(request):
+    return render(request, './crimsonboard/index.html',{})
+
