@@ -48,8 +48,6 @@ class StudentCourseEnrollmentSerializer(serializers.ModelSerializer):
             self.Meta.depth = 2
 
 class AssignmentSerializer(serializers.ModelSerializer):
-    # deadline = 
-    # deadline = datetime.strptime(my_date, "%d-%b-%Y-%H:%M:%S")
     class Meta:
         model = models.Assignments
         fields = ['id', 'course', 'instructor', 'title', 'description', 'deadline', 'assignment_file', 'assignmentSubmissions']
